@@ -4,8 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#"><img src="sources/Logo.png" alt="Logo" class="logo"></a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Товары</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">О нас</a></li>
+            </ul>
+            <div class="input-container">
+                <input type="text" class="search-field">
+                <button class="search-button"></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="product-details__container">
+            <picture class="product-card__pic">
+                <source srcset="/sources/Product.png" media="(min-width: 380px)" />
+                <img src="/sources/Product.png" alt="Product image" />
+            </picture>
+            <div class="product-details">
+                <ul class="breadcrumbs">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Каталог товаров</a></li>
+                    <li><a href="#">Контроль и диагностика</a></li>
+                    <li><a href="#">Инфракрасный пирометр Fluke 62 MAX</a></li>
+                </ul>
+                <h1 class="product-name">Инфракрасный пирометр Fluke 62 MAX</h1>
+                <div class="product-actions__container">
+                    <div class="input-container">
+                        <button class="btn">-</button>
+                        <input type="number" name="" id="" value="1" min="1">
+                        <button class="btn">+</button>
+                    </div>
+                    <button class="btn"><span class="icon" id="cart-icon"></span>В корзину</button>
+                    <div class="badge"><span class="icon" id="pointer-icon"></span>Заказ в клик!</div>
+                </div>
+                <pre class="product-desc">Инфракрасный термометр Fluke 62 MAX с точностью ±1°C для бесконтактного измерения температуры. Идеален для использования в промышленности, HVAC и электронике. Защита от пыли и воды по стандарту IP54.
+
+Температура:.................-30°C до 650°C
+Точность:.........................±1°C или ±1%
+Разрешение:...................0.1°C
+Оптика:.............................12:1
+Защита:............................IP54</pre>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
