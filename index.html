@@ -27,10 +27,7 @@
     </header>
     <main>
         <section class="product-details__container">
-            <picture class="product-card__pic">
-                <source srcset="/sources/product1.png" media="(min-width: 380px)" />
-                <img src="/sources/product1.png" alt="Product image" />
-            </picture>
+            <img class="product-card__pic" src="/sources/product1.png" alt="Product image" />
             <div class="product-details">
                 <ul class="breadcrumbs">
                     <li><a href="#">Главная</a></li>
@@ -52,9 +49,9 @@
 
                 <div class="product-sizes">
                     <h1 class="title">Доступные размеры:</h1>
-                    <input type="radio" name="product-size" id="sm" checked>
+                    <input type="radio" name="product-size" id="sm" >
                     <label for="sm">Маленький (1m x 1m)</label>
-                    <input type="radio" name="product-size" id="md">
+                    <input type="radio" name="product-size" id="md" checked>
                     <label for="md">Средний (2.5m x 2.5m)</label>
                     <input type="radio" name="product-size" id="lg">
                     <label for="lg">Большой (4m x 4m)</label>
@@ -82,11 +79,11 @@
         </section>
         <section>
             <div class="tabs" id="product-tabs">
-                <input type="radio" name="product-tabs" id="tab1-btn">
+                <input type="radio" checked name="product-tabs" id="tab1-btn">
                 <label for="tab1-btn">Описание</label>
                 <input type="radio" name="product-tabs" id="tab2-btn">
                 <label for="tab2-btn">Характеристики</label>
-                <input type="radio" checked name="product-tabs" id="tab3-btn">
+                <input type="radio" name="product-tabs" id="tab3-btn">
                 <label for="tab3-btn">Отзывы</label>
                 <input type="radio" name="product-tabs" id="tab4-btn">
                 <label for="tab4-btn">Аксессуары</label>
